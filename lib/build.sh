@@ -187,7 +187,7 @@ function build_dependencies() {
       info "$cache_status"
       info "Installing node modules"
       touch $build_dir/.npmrc
-      npm install --unsafe-perm --userconfig $build_dir/.npmrc 2>&1 | indent
+      npm install --unsafe-perm --userconfig $build_dir/.npmrc
     fi
   fi
 }
